@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "bd342677-2849-4cc2-a4a2-f41e6b025be2",
+		"name": "MEDIA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42729970"
+	},
+	"item": [
+		{
+			"name": "GET MEDIA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/medias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE MEDIA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"serial\": 3,\r\n  \"title\": \"Caminonuevo2\",\r\n  \"type\": \"67c33b3ddf7b9aa00b9451e1\",\r\n  \"director\": \"67c33a7ddf7b9aa00b9451cb\",\r\n  \"producer\": \"67c33af7df7b9aa00b9451d7\",\r\n  \"genre\": \"67c274e2b63ba5f463538d03\",\r\n  \"releaseYear\": 2014,\r\n  \"duration\": 169,\r\n  \"synopsis\": \"Un grupo de astronautas viaja a través de un agujero de gusano...\",\r\n  \"status\": \"Activo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/medias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"medias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE MEDIA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\": \"Camino2\",\r\n  \"type\": \"67c33b3ddf7b9aa00b9451e1\",\r\n  \"director\": \"67c33a7ddf7b9aa00b9451cb\",\r\n  \"producer\": \"67c33af7df7b9aa00b9451d7\",\r\n  \"genre\": \"67c274e2b63ba5f463538d03\",\r\n  \"releaseYear\": 2014,\r\n  \"duration\": 169,\r\n  \"synopsis\": \"Un grupo de astronautas viaja a través de un agujero de gusano...\",\r\n  \"status\": \"Activo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/medias/67c3505e051fc3828bfa59d7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"medias",
+						"67c3505e051fc3828bfa59d7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE MEDIA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/medias/67c3510a313dff43f5f6ecc7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"medias",
+						"67c3510a313dff43f5f6ecc7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "dd1d916b-58a6-4846-8849-da61a2b500ee",
+		"name": "TIPOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42729970"
+	},
+	"item": [
+		{
+			"name": "GET TYPES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE TYPES",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Good\",\r\n  \"description\": \"Pelicula\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/types",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE TYPES",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Daniel Jose\",\r\n \"description\": \"Pelicula\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/types/67c3377bdf7b9aa00b9451c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"types",
+						"67c3377bdf7b9aa00b9451c4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE TYPES",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/types/67c3377bdf7b9aa00b9451c4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"types",
+						"67c3377bdf7b9aa00b9451c4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
