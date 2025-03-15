@@ -5,14 +5,19 @@ const directorRoutes = require('./routes/directorRoutes');
 const producerRoutes = require('./routes/producerRoutes'); 
 const typeRoutes = require('./routes/typeRoutes'); 
 const mediaRoutes = require('./routes/MediaRoutes'); 
+const cors = require("cors");
+
 
 const app = express();
 const port = 4000;
 
+app.use(cors());
 app.use(express.json());
 
+// Conectar a la base de datos
 connectDB();
 
+// Rutas API
 app.use('/api/genres', genreRoutes);
 app.use('/api/directors', directorRoutes);
 app.use('/api/producers', producerRoutes);
