@@ -11,7 +11,11 @@ const cors = require("cors");
 const app = express();
 const port = 4000;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://mi-app.netlify.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Conectar a la base de datos
