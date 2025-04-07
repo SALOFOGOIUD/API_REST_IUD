@@ -10,11 +10,7 @@ const app = express();
 const port = 4000;
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://prismatic-travesseiro-bd8368.netlify.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
+app.use(cors());
 
 // Conectar a la base de datos
 connectDB();
