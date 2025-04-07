@@ -5,17 +5,11 @@ const directorRoutes = require('./routes/directorRoutes');
 const producerRoutes = require('./routes/producerRoutes'); 
 const typeRoutes = require('./routes/typeRoutes'); 
 const mediaRoutes = require('./routes/MediaRoutes'); 
-const cors = require("cors");
 
 
 const app = express();
 const port = 4000;
 
-app.use(cors({
-  origin: 'https://mi-app.netlify.app',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
-}));
 app.use(express.json());
 
 // Conectar a la base de datos
