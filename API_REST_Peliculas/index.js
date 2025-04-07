@@ -1,5 +1,5 @@
 const express = require('express');
-const { connectDB } = require('./BD/server');
+const { connectDB } = require('./BD/Server');
 const genreRoutes = require('./routes/genreRoutes'); 
 const directorRoutes = require('./routes/directorRoutes'); 
 const producerRoutes = require('./routes/producerRoutes'); 
